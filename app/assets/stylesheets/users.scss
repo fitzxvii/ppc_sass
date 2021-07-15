@@ -1,0 +1,158 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+    background-image: radial-gradient(gray 5%, black 50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: radial-gradient(white, whitesmoke);
+    padding: 16px 15px;
+    margin: 0;
+    img{
+        display: inline;
+        margin: 0;
+        vertical-align: bottom;
+        width: 500px;
+        height: 100px;
+    }
+
+    h2 {
+        display: inline-flex;
+        vertical-align: bottom;
+        margin-left: 410px;
+    }
+
+    ul {
+        display: block;
+        background-color: #D9DFE4;
+        padding: 12px 15px;
+        overflow: hidden;
+        li {
+            display: inline;
+            padding: 8px 20px;
+            border-right: solid gray 1px;
+            a {
+                color: gray;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+#main-content {
+    #about {
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 480px;
+            border: solid white 5px;
+            margin: 20px 10px;
+        }
+
+        #info {
+            width: 735px;
+            height: 334px;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: rgba(255, 255, 255, 0.35);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 56px;
+
+            h2 {
+                background-image: linear-gradient(gold, orange);
+                margin: 0px;
+                padding: 10px;
+            }
+
+            div {
+                display: block;
+                margin: 20px;
+                color: white;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    #update {
+        display: block;
+        margin-left: 10px;   
+
+        img {
+            display: inline-block;
+            width: 75px;
+            vertical-align: middle;
+        }
+
+        p {
+            margin-left: 20px;
+            display: inline-block;
+            color: gold;
+            vertical-align: middle;
+        }
+    }
+
+    #sub-contents {
+        display: block;
+        margin-top: 20px;
+
+        @mixin default {
+            display: inline-block;
+            width: 300px;
+            height: 380px;
+            border: solid gray 3px;
+            background-color: white;
+            vertical-align: top;
+            margin: 10px;
+
+            h3 {
+                background-image: linear-gradient(gold, orange);
+                margin: 0px;
+                padding: 10px; 
+            }
+
+            img {
+                display: block;
+                width: 300px;
+                height: 150px;
+            }
+
+            p {
+                display: block;
+                width: 280px;
+                height: 100px;
+                margin: 10px;
+            }
+
+            a {
+                display: block;
+                margin-left: 140px;
+                color: black;
+                text-decoration: none;
+                padding: 5px;
+                font-size: 14px;
+                background-image: linear-gradient(gold, orange);
+                font-weight: bold;
+                width: 110px;
+                padding: 8px;
+                -webkit-clip-path: polygon(75% 0, 100% 51%, 78% 100%, 0 100%, 0 0);
+                clip-path: polygon(75% 0, 100% 51%, 78% 100%, 0 100%, 0 0);
+                border-radius: 10px;
+                border: solid black 3px;
+                position: relative;
+            }
+        }
+
+        .sub-content {
+            @include default;
+        }
+    }
+}
+
